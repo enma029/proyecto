@@ -1,0 +1,121 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cuentas.css">
+    <script src="Adm.js" defer></script>
+    <title>Administración</title>
+</head>
+<body>
+    <header class="top-bar">
+                
+            <a href="Direccion.html" id="Atras"><img class="img-atras" src="/iconos/back-button.png" alt="Atras"></a>
+
+            <input type="checkbox" id="abrir">
+            <label class=""abrir" for="abrir">
+                <div class="Conteiner-perfil">
+                    <img class="perfil" src="/perfiles/perfil-d.png">
+                </div>
+            </label>
+
+<!-- MENU DE PERFIL -->
+            <div class="ajustes">
+                <div class="ajustes-conteiner-perfil">
+                            <img class="perfil-ajuste" src="/perfiles/perfil-d.png">
+                            <h3>Dirección</h3>
+                </div>
+                
+                <a class="ajustes-opcion" href="cuentas-adminstracin.html">Administración de Cuentas</a>
+                <a class="ajustes-opcion" href="#">Cambiar Contraseña</a>    
+                <a class="ajustes-opcion" id="Salir" href="/index.html">Cerrar sesión</a>
+        </div>
+        </header>
+        <main>
+            <h2>Administración de Áreas</h2>
+            <button class="Registrar-boton" id="Registrar-boton">Registrar</button>
+            <div class="conteiner-tabla">
+        <table class="custom-tabla">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Contraseña</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Redes populares</td>
+                    <td class="Contraseña-td">711203</td>
+                    <td class="opciones"> <a href="" title="Editar" id="editar" class="editar-a"><img class="editar-img" src="/iconos/edit.png" alt=""></a> <a id="borrar" title="Borrar" href="" class="borrar-a"><img class="borrar-img" src="/iconos/delete.png" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td>Atención al Ciudadano</td>
+                    <td class="Contraseña-td">584008</td>
+                </tr>
+                <tr>
+                    <td>Atención de desarrollo Integral de Urbanismos</td>
+                    <td class="Contraseña-td">13152</td>
+                </tr>
+                <tr>
+                    <td>SUNAVI</td>
+                    <td class="Contraseña-td">210407</td>
+                </tr>
+                <tr>
+                    <td>BANAVIH</td>
+                    <td class="Contraseña-td">719550</td>
+                </tr>
+                <tr>
+                    <td>INTU</td>
+                    <td class="Contraseña-td">350204</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr><tr>
+                    <td></td>
+                </tr><tr>
+                    <td></td>
+                </tr><tr>
+                    <td></td>
+                </tr><tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="Modal-box Modal-box-desactivado">
+            <div class="Modal-editar">
+                <form action="">
+                    <label class="label-modal" for="">Departamento</label>
+                        <input class="input-modal"placeholder="Nombre del Departamento" type="text" maxlength="70" value="Redes Populares">
+                    
+                    <label class="label-modal" for="">Contraseña</label>
+                        <input class="input-modal" placeholder="Contraseña" type="text" minlength="4" maxlength="8" value="711203">
+                    
+                    <div class="opcion">
+                        <input  class="Enviar" type="submit"> <button class="Cancelar" type="button">Cancelar</button>
+                    </div>    
+                </form>
+            </div>
+        </div>    
+            <div class="Modal-box  Registrar-desactivar">
+                <div class="Registrar-modal">
+                    <form action="">
+                        <label class="label-modal" for="">Nombre del Departamento</label>
+                            <input class="input-modal" id="Nombre-registrar" type="text" value="" placeholder="Nombre del Departamento" minlength="4" maxlength="70">
+                        
+                        <label class="label-modal" for="">Contraseña</label>
+                            <input class="input-modal" id="Contraseña-1" type="text" minlength="4" placeholder="Contraseña" maxlength="8">
+                        
+                        <label  class="label-modal">Confirmar contraseña</label>
+                            <input class="input-modal" id="Contraseña-2" type="password" placeholder="Confirme nuevamente la contraseña" minlength="4" maxlength="8">
+                        <div class="opcion">
+                            <input  class="Enviar" type="submit"> <button class="Cancelar" type="button">Cancelar</button>
+                        </div>
+                    </form>
+                </div>    
+            </div>
+        </main>
+</body>
+</html>

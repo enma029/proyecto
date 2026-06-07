@@ -1,0 +1,99 @@
+/* Playfair */
+@font-face {
+    font-family:"Playfair" ;
+    src: url(PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family:"Playfair" ;
+    src: url(PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family:"Playfair" ;
+    src: url(PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family:"Playfair" ;
+    src: url(PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family:"Playfair" ;
+    src: url(PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    font-weight:900;
+}
+/* Monzerrat */
+@font-face {
+    font-family:"Monzerrat" ;
+    src: url(MontserratAlternates-Medium.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family:"Monzerrat" ;
+    src: url(MontserratAlternates-Medium.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family:"Monzerrat" ;
+    src: url(MontserratAlternates-Medium.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family:"Monzerrat" ;
+    src: url(MontserratAlternates-Medium.ttf);
+    font-weight: 700;
+}
+/* Cormorant */
+@font-face {
+    font-family:"Cormorant";
+    src: url(Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family:"Cormorant";
+    src: url(Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family:"Cormorant";
+    src: url(Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family:"Cormorant";
+    src: url(Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family:"Cormorant";
+    src: url(Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.ttf);
+    font-weight: 900;
+}
+/* baskervville */
+@font-face {
+    font-family:"Baskervville" ;
+    src: url(Baskervville-Regular.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family:"Baskervville" ;
+    src: url(Baskervville-Regular.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family:"Baskervville" ;
+    src: url(Baskervville-Regular.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family:"Baskervville" ;
+    src: url(Baskervville-Regular.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family:"Baskervville" ;
+    src: url(Baskervville-Regular.ttf);
+    font-weight: 800;
+}

@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.top-bar {
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: rgb(10, 2, 42);
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 60px;
+}
+span{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #ececec;
+}
+.Conteiner-perfil{
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+    text-align: center;
+}
+.perfil{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius:50% ;
+    object-fit: cover;
+}
+.perfil:hover{
+    box-shadow: 0px -1px 14px #ffffffae;
+}
+
+/* Ventana de perfil y ajustes  */
+.ajustes{
+    z-index: 1000;
+    display: none;
+    width: 280px;
+    height: 230px;
+    background-color:#d1dce3;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.693);
+    position: fixed;
+    top: 64px;
+    right: 20px;
+    text-align: center;
+}
+.abrir{
+    margin: 0;
+    margin-right: 15px;
+}
+.ajustes-conteiner-perfil{
+    height: 94px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+    position: relative;
+    
+}
+.perfil-ajuste{
+    width: 44px;
+    height: 44px;
+    margin-top: 10px;
+    border-radius:50% ;
+    object-fit: cover;
+}
+h3{
+    margin-top: 3px;
+    font-size: 23px;
+}
+#abrir{
+    display: none;
+}
+.ajustes-opcion{
+    display: block;
+    text-align: left;
+    margin: 10px;
+    margin-top: 17px ;
+    font-size: 17px;
+    margin-left: 16px ;
+    color: black;
+}
+#Cerrar:checked ~ .ajustes{
+    display: none !important;
+}
+#abrir:checked ~ .ajustes{
+    display: block !important;
+}
+#Atras{
+    margin-left: 20px;
+}
+.img-atras{
+    height: 30px;
+}
+/* TABLAS  */
+main {
+    position: relative;
+    margin: auto;
+    margin-top:80px ;
+    width: 97%;
+    height: 80%;
+}
+h2{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.conteiner-tabla{
+    width: 100%;
+    height: 420px;
+    padding-top: 27px;
+    padding-left: 10px;
+    border-radius: 20px;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+.custom-tabla{
+margin-left:70px ;
+margin-top: 10px;
+}
+.conteiner-tabla th {
+    background-color: #f8fafc;
+    color: #64748b;
+    width: 325px;
+    padding: 12px;
+    border-bottom: 2px solid #ced1d6;
+    font-size: 14px;
+}
+
+.conteiner-tabla td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #c0c6cf;
+    font-size: 15px;
+}
+/* OPCIONES */
+.opciones{
+    text-align: center;
+}
+.Contraseña-td{
+    text-align: center;
+}
+.editar-img{
+    height: 16px;
+}
+.borrar-img{
+    height: 19px;
+    padding-left:16px ;
+}
+/* MODAL */
+.Modal-box-desactivado, .Registrar-desactivar{
+    display: none;
+}
+
+.Modal-box , .Registrar-box{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.627);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.Modal-editar, .Registrar-modal{
+    position: relative;
+    margin: auto;
+    margin-top: 110px;
+    width: 400px;
+    height: 320px;
+    background-color: #d1dce3;
+    border-radius: 9px;
+    border-left: 6px solid #f9f7f7;
+    padding: 30px;
+    padding-top: 20px;
+}
+.label-modal{
+    display: block;
+    font-size: 20px;
+    margin-top: 23px;
+}
+.input-modal{
+    width: 330px;
+    height: 40px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.opcion{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    bottom: 15;
+    right: 0;
+}
+.Enviar, .Cancelar{
+    height: 30px;
+    width: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.267) ;
+    border-radius: 4px;
+    background-color: #fff8f8;
+    
+}
+.Cancelar{
+    margin-left: 20px;
+}
+.input-modal:focus{
+    outline: none ;
+    border: 1px solid rgba(0, 0, 0, 0.495) ;
+}
+.Enviar:hover, .Cancelar:hover{
+    background-color: #dbd6d6;
+} 
+/* REGISTRAR */
+.Registrar-boton{
+    position: absolute;
+    height: 40px;
+    width: 90px;
+    right: 200;
+    top: 10;
+    font-size: 15;
+    background-color: #f8f8f8;
+    border:1px solid #a9a9a94e;
+    border-radius: 7px;
+}
+.Registrar-boton:hover{
+    background-color: #c9c8c8a7;
+    border-radius: 8px;
+    width: 92px;
+    font-size: 14;
+    transition: 0.5s;
+}
+.Registrar-modal{
+    height: 400px;
+}

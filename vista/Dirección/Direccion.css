@@ -1,0 +1,239 @@
+/* barra de navegacion */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f2f2f2;
+}
+.conteiner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width:270px;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgb(7, 0, 39);
+    border-radius:0px 15px 15px 0;
+    overflow-y: auto;
+
+    scrollbar-width: none;
+
+    /* transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.3s ease; */
+}
+.conteiner-img{
+    height: 100px;
+    padding: 0px 0px 0 70px;
+}
+
+/* LI */
+nav{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+li{
+    list-style: none;
+    margin:10px 60px;
+    font-size: 18px;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.conteiner-iconos{
+    position: relative;  
+    width: 100%;
+    height: 62px;
+    justify-content: center;
+}
+.iconos{
+    position: absolute;
+    padding-left: 23px;
+    transform: translateY(-150%);
+    height: 23px;
+}
+.conteiner-iconos:hover{
+    background-color: rgba(16, 0, 96, 0.754);
+    padding-left: 10px;
+    border-left: 1px solid #ffffffaf;
+    border-radius: 0 15px 15px 0;
+    transition: 0.3s;
+}
+
+/* barra superior */
+.top-bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: rgb(10, 2, 42);
+    justify-content: space-between;
+    align-items: center;
+    width:81% ;
+    margin-left: 260px;
+    padding: 15px 30px;
+    height: 60px;
+    z-index: 999;
+}
+span{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #ececec;
+}
+.Conteiner-perfil{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.perfil{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius:50% ;
+    object-fit: cover;
+}
+.perfil:hover{
+    box-shadow: 0px -1px 14px #ffffffae;
+}
+
+/* Ventana de perfil y ajustes  */
+.ajustes{
+    display: none;
+    width: 280px;
+    height: 230px;
+    background-color:#d1dce3;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.693);
+    position: fixed;
+    top: 64px;
+    right: 20px;
+    text-align: center;
+}
+.ajustes-conteiner-perfil{
+    height: 94px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+    position: relative;
+}
+.perfil-ajuste{
+    width: 44px;
+    height: 44px;
+    margin-top: 10px;
+    border-radius:50% ;
+    object-fit: cover;
+}
+h3{
+    margin-top: 3px;
+    font-size: 23px;
+}
+#abrir{
+    display: none;
+}
+.ajustes-opcion{
+    display: block;
+    text-align: left;
+    margin: 10px;
+    margin-top: 17px ;
+    font-size: 17px;
+    margin-left: 16px ;
+    color: black;
+}
+#Cerrar:checked ~ .ajustes{
+    display: none;
+}
+#abrir:checked ~ .ajustes{
+    display: block;
+}
+label{
+    color: #fff;
+    font-size: 40px;
+    z-index: 2;
+}
+
+/* .header__checkbox:checked ~ .conteiner{
+    transform: translateX(0);
+    opacity: 1;
+} */
+
+/* MAIN */
+main{
+    margin: 80px 5px 0 0;
+    height: 100vh;
+    margin-left: 281px;
+}
+.conteiner-graficas{
+    display: flex;
+}
+.main-div-solicitudes{
+    position: relative;
+    width: 400px;
+    height: 120px;
+    margin: 20px 0 10px 60px;
+    background-color: #011c40;
+    border-radius: 13px;
+    padding: 10px 0;
+    color: #f0efef;
+    box-shadow: 2px 1px 10px black;
+}
+.tarea{
+    font-size: 22px;
+    padding-left: 20px;
+    margin-right: 100px;
+}
+.cantidad-tarea{
+    font-size: 36px;
+    padding: 25px 0 0 40px;
+}
+.grafica{
+    position: absolute;
+    height: 120px;
+    right: 0;
+}
+.main-div-pendiente{
+    position: relative;
+    width: 400px;
+    height: 120px;
+    margin: 20px 0 10px 150px;
+    background-color: #011c40;
+    border-radius: 13px;
+    padding: 10px 0;
+    color: #f0efef;
+    box-shadow: 2px 1px 10px black;
+}
+.pendiente{
+    font-size: 22px;
+    padding-left: 20px;
+    margin-right: 100px;
+}
+.grafica-radius{
+    position: absolute;
+    height: 100px;
+    right: 0;
+}
+table{
+    text-align: center;
+}
+.conteiner-tabla{
+    background-color: #c8c8c8;
+    width: 92%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 20px;
+}
+th{
+    padding-left: 40px;
+    padding-right: 30px;
+    background-color: #f6f6f6;
+    font-size: 24px;
+}
+tr{
+    padding-left: 40px;
+    padding-right: 30px;
+    background-color: #ebeaea;
+    font-size: 16px;
+}

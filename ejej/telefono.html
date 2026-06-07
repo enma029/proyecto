@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministerio del Poder Popular para el Hábitat y La Vivienda – MINHVI</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/descarga (1)-Photoroom.png">
+    <link rel="stylesheet" href="/imagenes">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <!-- -----login---- -->
+        <header class="header-logos">
+            <img class="header-img img__ministerio" src="imagenes/1-Photoroom.png">
+                <a class="minhvi" href="https://www.minhvi.gob.ve/minhvi/">
+            <img class="header-img img__misión" src="imagenes/Gran Misión.png" alt="" >
+            </a>
+        </header>
+    <div class="main-container">
+            <main class="login-content">
+                <div class="main-conteiner">
+                    <div class="main-conteiner-img">
+                        <img class="main-img" src="imagenes/descarga (1)-Photoroom.png" alt="">
+                        </div>
+                            <h2>INICIO DE SESIÓN</h2>
+
+        <!-- -------form------- -->
+        <form class="login-form" action="imagenes/1.png">
+
+            <div class="form-grupo grupo-1">
+                <img class="id-card-line" src="iconos/id-card-line.png">
+                    <input class="form-input" type="text" placeholder="Nombre de Usuario" maxlength="8" required>
+            </div>
+
+                    <div class="form-grupo grupo-2">
+
+                        <img class="lock-fill" src="iconos/lock-fill.png" alt="">
+                            <input class="form-input" id="qlo" type="password" placeholder="Contraseña" maxlength="16" required>
+                                <input class="password-toggle" type="checkbox" id="selector" onclick="qlo.type = this.checked? 'text': 'password'">                                
+                                    
+                                    <label for="selector" class="eye-button">
+                                        <img class="eye-closed" src="iconos/eye.svg" alt="" id="check-visible">
+                                        <img class="eye-open" src="iconos/eye-fill.svg" alt="" id="qlp">
+                                    </label>    
+                    </div>
+        <!-- ----olvido su contraseña-------- -->
+                <div class="box-ps">        
+                        <a class="olvido-password" href="#">¿Olvidó su contraseña?</a>
+                        <a class="registrar" href="#">REGISTRAR</a>
+                </div>            
+                        <div class="form-intro-box">
+                                <button class="form-intro" type="submit">ENTRAR</button>
+                            </div>
+                                </form>
+                        </div>    
+                </main>
+        </div>        
+</body>
+</html>
