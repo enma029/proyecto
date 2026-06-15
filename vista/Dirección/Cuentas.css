@@ -111,7 +111,7 @@ main {
 }
 h2{
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 135px;
 }
 .conteiner-tabla{
     width: 80%;
@@ -128,6 +128,7 @@ h2{
 .custom-tabla{
     width: 100%;
     background-color: #fff;
+    text-align: center;
 }
 .conteiner-tabla th {
     background-color: #f8fafc;
@@ -140,7 +141,7 @@ h2{
 }
 
 .conteiner-tabla td {
-    padding: 14px 12px;
+    padding: 10px 12px;
     border-bottom: 1px solid #c0c6cf;
     font-size: 15px;
     border-left: 1px solid #c0c6cf7f;

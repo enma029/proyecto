@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f2f2f2;
+}
+.top-bar {
+    display: flex;
+    top:0;
+    left: 0;
+    background-color: rgb(10, 2, 42);
+    justify-content: space-between;
+    width:100%;
+    height: 60px;
+    z-index: 999;
+}
+
+.Titulo{
+    display: flex;
+    color: #f6f6f6;
+    height: 10px;
+    margin-top:10px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+}
+.Titulo img{
+    height: 28px;
+    margin-right: 10px;
+}
+.salida{
+    border: 2px solid #d4d4d4df;
+    margin-top: 7px;
+    margin-right: 20px;
+    padding: 10px 16px;
+    width: 70px;
+    height: 42px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.salida:hover{
+    background-color: #fdfcfc82 ;
+    color: rgb(255, 255, 255);
+}
+label{
+    color: #fff;
+    font-size: 40px;
+    z-index: 2000;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.Recaudo-box{
+    background-color: #8f8b8b;
+    width: 28%;
+    height: 400px;
+    border-radius: 20px;
+}
+.Recaudo-header{
+    background-color: rgb(17, 4, 66);
+    position: relative;
+    height: 90px;
+    border-radius: 20px 20px 0 0;
+}
+.motivo{
+    position: absolute;
+    width: 200px;
+    max-height:20px ;
+    top: 15px;
+    left: 20px;
+    font-weight: 800;
+    font-size: 8px;
+    color: #ffce47;
+    background-color: #9facb952;
+    border-radius: 5px;
+}
+.ciudadano-nombre{
+    position: absolute;
+    top: 50px;
+    font-size: 25px;
+    color: #f6f6f6;
+}
+.ciudadano-CI{
+    position: absolute;
+    font-size: 13px;
+    top: 97px;
+    left: 24px;
+    color: #fcfeffb9;
+}
+.Recaudos-boton-box{
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid rgba(46, 45, 45, 0.482);
+    border-radius: 10px;
+}
+.Recaudo-boton{
+    width: 15px;
+    height: 9px;
+    margin: 5px;
+    border: 1px solid black;
+}
+.Recaudo-titulo{
+    color: #000000da;
+}
+.Recaudo-descripcion{
+    color: #000000ca;
+    padding-left: 15px;
+    padding-top: 3px;
+    font-size: 15px;
+}
+.h3-recaudo{
+    font-size: 20px;
+    color: #303538;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+.contenedor-cuadro{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    gap: 40px;
+    height: auto;
+    margin-bottom: 30px;
+    min-width: 100%;
+}
+.Box-datos, .Inforamción-box{
+    width: 600px;
+    padding-bottom: 10px;
+    background-color: #8f8b8b;
+    border-radius:10px ;
+    border: 1px solid #b8b8b8da;
+    background-color: #fff
+}
+/* DATOS DE VISITANTE */
+.header-box{
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(32, 9, 113);
+    padding: 15px 0 0 020px;
+    color: #f8f8f8;
+    position: relative;
+}
+.header-box h3{
+    margin-left: 40px;
+    margin-top: 6px;
+}
+.ajustes-perfil{
+    position: absolute;
+    height: 30px;
+}
+.Datos-input{
+    margin-top: 14px;
+    width: 90%;
+}
+.Datos{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+}
+.Datos input{
+    margin-top: 6px;
+    margin-left: 8px;
+    height: 37px;
+    font-weight: 500;
+    width: 216px;
+    padding-left: 20px;
+    border: 1px solid #9cb1b0;
+    color: #2c2c2c;
+    border-radius: 6px;
+    outline: none;
+}
+.Datos input:focus, .telefono:focus{
+    border: 1.99px solid #1a3451;
+}
+.grupo-1{
+    width: 280px;
+}
+
+span{
+    font-size: 14px;
+    color: #21314f;
+    font-weight: 600;
+}
+
+/* SEXO Y EDAD */
+
+.edad-sexo{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    width: 90%;
+    height: 130px;
+    margin: auto;
+    margin-top: 17px;
+    padding: 20px;
+    background-color: #ccd9eb36;
+    border: 1px solid #8f8b8b41;
+    border-radius: 10px;
+}
+.edad-sexo span{
+    display: block;
+    margin-bottom: 8px;
+}
+.edad-sexo label {
+    display: block;     
+    color: #1d2022;
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-weight: 500;   
+}
+.edad-sexo input {
+    margin-right: 5px;
+}
+/* discapacidad */
+.discapacidad-telefono{
+    width: 100%;
+    display: flex;
+    margin-top:29px;
+}
+
+.discapacidad{
+    display: flex;
+    flex-direction:column;
+    height: 88px;
+    width: 180px;
+    margin-left: 25px;
+    background-color: #ccd9eb36;
+    border: 1px solid #8f8b8b41;
+    border-radius: 10px;
+}
+.discapacidad span{
+    display: block;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+.pu{
+    display: flex;
+    align-items: center;
+    height: 19px;
+    margin-top: 9px;
+    margin-bottom: 0;
+    padding: 10px 20px;
+}
+.pu label:nth-child(2){
+    margin-left: 15px;
+}
+.pu label{
+    color: #1d2022;
+    font-size: 13px;
+    font-weight: 600;
+}
+select{
+    width: 90%;
+    outline: none;
+    margin: auto;
+    margin-top: 9px;
+    border-radius:5px;
+    font-size: 12px;
+    border: 1px solid #8f8b8b55;
+}
+.Telefono-box{
+    width: 200px;
+    height: 88px;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+.telefono{
+    border: 1px solid #9cb1b0;
+    outline: none;
+    width: 220px;
+    height: 36px;
+    font-weight: 600;
+    color: #2c2c2c;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.Telefono-box span{
+    display: block;
+    font-size: 16px;
+}
+/* Contenedor principal de la sección */
+.ubicacion-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+/* Título de la sección */
+.ubicacion-header h4 {
+    color: #21314f;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.ubicacion-inputs {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.campo-geografico {
+    display: flex;
+    flex-direction: column; 
+    flex: 1;}
+.campo-geografico span {
+    font-size: 12px;
+    color: #33383f;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.campo-geografico input {
+    width: 150px;
+    height: 37px;
+    border: 1px solid #9cb1b0; 
+    border-radius: 12px;
+    padding-left: 15px;
+    font-size: 15px;
+    color: #2c3e50;
+    font-weight: 500;
+    background-color: #fff;
+    outline: none;
+}
+.campo-geografico input:focus {
+    border: 1px solid #1a3451;
+}
+/* .estado-funcionario  */
+.estado-funcionario{
+
+}
+
+.estado-funcionario input{
+    margin-top: 6px;
+    margin-left: 8px;
+    height: 36px;
+    font-weight: 600;
+    width: 216px;
+    padding-left: 20px;
+    border: 1px solid #9cb1b0;
+    color: #2c2c2c;
+    border-radius: 6px;
+    outline: none;
+}
+.funcionario{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-left: 30px;
+    margin-top: 29px;
+    margin-bottom: 30px;
+    height: auto;
+}
+.funcionario-opciones{
+    width: 262px;
+}
+.condicion{
+    width: 210px;
+    height: 34px;
+}
+.Planificacion{
+    width: 90%;
+    height: 138px;
+    margin-left: 25px;
+    background-color: #ccd9eb36;
+    border: 1px solid #8f8b8b41;
+    border-radius: 10px;
+}
+.Planificacion input:focus {
+    border: 1px solid #1a3451;
+}
+.Planificacion span{    
+    color: #5d626a;
+    font-size: 13px;
+    color: #0059ff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+
+}
+.input-planificacion{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+/* Textarea */
+
+textarea{
+    border-radius: 9px;
+    resize: none;
+    overflow-y: auto;
+    padding: 20px;
+}
+/* Seguimientos */
+.Seguimiento-box{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.seguimientos{
+    padding-top: 4px;
+    padding-bottom: 5px;
+    width: 170px;
+    border-radius:10px;
+    margin-left: 10px;
+    height: 70px;
+    background-color: #ccd9eb29;
+    border: 1px solid #8f8b8b41;
+}
+.seguimientos input{
+    width: 150px;
+    border: 1px solid #9cb1b021;
+}
+.seguimientos span{
+    font-size: 11px;
+    padding: 8px;
+}

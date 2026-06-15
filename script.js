@@ -32,13 +32,13 @@ function Validar_input(){
     return false;
     }
 
-    if(usuario !== "Direccion"){
-        alert("Nombre de Usuario Incorrecto");
-            inputu_usuario.focus();
-        return false;
-    }if(contraseña !== "291717"){
-        alert("contraseña Incorrecta");
-            inputu_contraseña.focus();
-        return false;
-    }
+//     if(usuario !== "Direccion"){
+//         alert("Nombre de Usuario Incorrecto");
+//             inputu_usuario.focus();
+//         return false;
+//     }if(contraseña !== "291717"){
+//         alert("contraseña Incorrecta");
+//             inputu_contraseña.focus();
+//         return false;
+//     }
 }
